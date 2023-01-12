@@ -1,0 +1,11 @@
+{
+  "name": "puppeteer-starter",
+  "version": "1.0.0",
+  "description": "just getting started with puppeteer",
+  "main": "index.js",
+  "author": "jjhegluero",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^19.5.1"
+  }
+}
