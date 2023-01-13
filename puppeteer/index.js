@@ -1,13 +1,11 @@
-const puppeteer = require('puppeteer')
+const puppeteer = require('puppeteer');
 
-async function run() {
-    const browser = await puppeteer.launch()
+(async () => {
+    const browser = await puppeteer.launch({headless: false})
     const page = await browser.newPage()
-    await page.goto('https://phptravels.com/demo/')
+    await page.goto('http://localhost:3000/')
 
     await page.screenshot({path: 'home.png', fullPage: true})
 
     await browser.close()
-}
-
-run()
+})()

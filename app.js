@@ -9,6 +9,7 @@ app.use(express.static(src))
 
 
 app.get('/', (req, res) => {
+  res.sendStatus(200)
   res.sendFile(staticPath)
 })
 
