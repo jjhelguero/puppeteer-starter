@@ -8,12 +8,15 @@ const assert = require('assert');
     const IMAGE_UNIQUE_LENGTH = 1
     const IMAGE_DESCRIPTION = 'A random image courtesy of unsplash.com.'
     const IMAGE_SRC = 'https://source.unsplash.com/random/400x200'
+    const todayDate = new Date().toDateString()
+
     await page.goto('http://localhost:3000/')
 
     const pageTitle = await page.$eval('h1', el => el.innerText)
     assert.equal(pageTitle, 'Hello, World!')
 
     const date = await page.$eval('h4', el => el.innerText)
+    assert.equal(date, todayDate)
 
     const images = await page.$$('.section-style')
     assert.equal(images.length, IMAGE_LENGTH)
