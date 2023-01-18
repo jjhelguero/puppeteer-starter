@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 const assert = require('assert');
 
 (async () => {
-    const browser = await puppeteer.launch({headless: false})
+    const browser = await puppeteer.launch()
     const page = await browser.newPage()
     const IMAGE_LENGTH = 4
     const IMAGE_UNIQUE_LENGTH = 1
