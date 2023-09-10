@@ -11,8 +11,10 @@
     "run-and-test": "start-server-and-test start-server http://localhost:3000 test"
   },
   "devDependencies": {
-    "express": "^4.18.2",
     "puppeteer": "^19.5.1",
     "start-server-and-test": "^2.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
   }
 }
