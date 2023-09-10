@@ -1,0 +1,15 @@
+name: Playwright Tests
+on: pull_request
+jobs:
+  e2e-tests:
+    runs-on: ubuntu-latest
+    container: node:18.13.0
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - name: Install Dependencies
+        run: yarn
+      - name: Install Playwright dependencies
+        run: npx playwright install --with-deps
+      - name: Run Playwright tests
+        run: yarn run-and-test
