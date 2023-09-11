@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 const assert = require('assert');
 
-(async () => {
+it('should run ', async () => {
     const browser = await puppeteer.launch()
     const page = await browser.newPage()
     const IMAGE_LENGTH = 4
@@ -38,4 +38,4 @@ const assert = require('assert');
     await page.screenshot({path: 'home.png', fullPage: true})
 
     await browser.close()
-})()
+})

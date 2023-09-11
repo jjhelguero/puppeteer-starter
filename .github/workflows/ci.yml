@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: Puppeteer Tests
 on: push
 jobs:
   e2e-tests:
@@ -10,4 +10,6 @@ jobs:
       - name: Install Dependencies
         run: yarn
       - name: Run Puppeteer tests
-        run: yarn run-and-test
+        run: yarn test:e2e
+        env:
+          CI: true

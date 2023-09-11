@@ -8,9 +8,12 @@
   "scripts": {
     "test": "node ./puppeteer/index",
     "start-server": "node app.js",
-    "run-and-test": "start-server-and-test start-server http://localhost:3000 test"
+    "run-and-test": "start-server-and-test start-server http://localhost:3000 test",
+    "test:e2e": "jest" 
   },
   "devDependencies": {
+    "jest": "^29.6.4",
+    "jest-puppeteer": "^9.0.0",
     "puppeteer": "^19.5.1",
     "start-server-and-test": "^2.0.0"
   },
