@@ -11,3 +11,5 @@ jobs:
         run: yarn
       - name: Run Puppeteer tests
         run: yarn test:e2e
+        env:
+          CI: true
