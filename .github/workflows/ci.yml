@@ -10,4 +10,4 @@ jobs:
       - name: Install Dependencies
         run: yarn
       - name: Run Puppeteer tests
-        run: yarn run-and-test
+        run: yarn test:e2e
