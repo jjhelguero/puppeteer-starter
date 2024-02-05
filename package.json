@@ -11,7 +11,7 @@
     "run-and-test": "start-server-and-test start-server http://localhost:3000 test"
   },
   "devDependencies": {
-    "puppeteer": "^19.5.1",
+    "puppeteer": "^22.0.0",
     "start-server-and-test": "^2.0.0"
   },
   "dependencies": {
