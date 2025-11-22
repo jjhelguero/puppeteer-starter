@@ -6,7 +6,7 @@ jobs:
     container: node:18.13.0
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Install Dependencies
         run: yarn
       - name: Run Puppeteer tests
